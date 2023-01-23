@@ -1,13 +1,19 @@
-body {
-	background-color: black;
-}
 main {
 	overflow: hidden;
 	position: relative;
+	width: 100%;
 }
 main video {
-	height: calc(100vh - 59px);
-	width: 100vw;
+	/* height: calc(100vh - 60px);
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center center;
+	object-position: center center;
+	width: 100vw; */
+	background-color: black;
+	-o-object-fit: contain;
+	object-fit: contain;
+	width: 375px;
 }
 main .main-bg {
 	background-color: rgba(0, 0, 0, 0.705);
@@ -16,4 +22,39 @@ main .main-bg {
 	width: 100%;
 	top: 0;
 	z-index: 10;
+}
+main .Hero-content-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}
+main .Hero-content-wrapper h1 {
+	color: rgba(255, 255, 255, 0.678);
+	font-size: 5rem;
+	text-align: center;
+}
+main .Hero-content-wrapper a {
+	background-color: #212529;
+	color: white;
+	border-radius: 10px;
+	display: block;
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: 0.325px;
+	padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	transition: 250ms linear background;
+	width: 150px;
+}
+main .Hero-content-wrapper a:hover {
+	background-color: black;
 }
