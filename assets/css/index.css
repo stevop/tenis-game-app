@@ -1,0 +1,19 @@
+body {
+	background-color: black;
+}
+main {
+	overflow: hidden;
+	position: relative;
+}
+main video {
+	height: calc(100vh - 59px);
+	width: 100vw;
+}
+main .main-bg {
+	background-color: rgba(0, 0, 0, 0.705);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+}
